@@ -1,0 +1,150 @@
+.perfil_destinatario {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.perfil_destinatario img {
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+
+}
+   
+
+
+.mySidebar{
+
+  background: linear-gradient( #1a29af, #5400a3);
+
+
+}
+
+
+
+#input_message{
+    display:flex;
+    
+
+}
+
+#message_input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    color: #f8f9fc !important;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, #4e73df, #224abe);
+    margin-right: 20px;
+}
+#message_input::placeholder {
+  color: #f8f9fc; /* Color blanco para el texto del placeholder */
+}
+#send_button{
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, #4e73df, #224abe);
+    color: #fff;
+}
+
+#chat {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  height: 500px; /* Altura deseada */
+  overflow-y: auto; /* Mostrar scroll vertical */
+  overflow-x: hidden; /* Ocultar scroll horizontal */
+  padding: 10px; /* Agregar un poco de espacio interior */
+}
+
+/* Oculta el scrollbar */
+#chat::-webkit-scrollbar {
+  width: 0; /* Ancho 0 para ocultar */
+  background: transparent; /* Fondo transparente */
+}
+
+
+.mensaje-destinatario {
+    align-self: flex-start;
+    max-width: 80%;
+    padding:10px;
+    background:linear-gradient(to right, #4e73df, #224abe);
+    padding: 10px;
+    border-radius: 0 10px 10px 10px;
+    display: table;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    font-size: 18px;
+    color: #f8f9fc;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .mensaje-destinatario::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    border-width: 0px 10px 10px 0;
+    border-style: solid;
+    border-color: transparent #4e73df transparent transparent;
+  }
+  
+  .mensaje-usuario {
+    align-self: flex-end;
+    max-width: 80%;
+    padding:10px;
+    background: linear-gradient(to right, #224abe, #4e73df);
+    color: #f8f9fc;
+    padding: 10px;
+    border-radius: 10px 0px 10px 10px;
+    display: table;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    font-size: 18px;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .mensaje-usuario::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    border-width: 0px 0 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #4e73df;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.banner-gradient {
+  width: 100%;
+  height: calc(38vh - 56px); /* Resta la altura del topbar */
+  background: linear-gradient(to right,  #1a29af, #5400a3); /* Cambiar los colores a morado y azul */
+  position: absolute;
+  top: 56px; /* Ajusta el valor según la altura del topbar */
+  left: 0;
+  z-index: 0;
+}
+
+.navbar {
+  z-index: 1000;
+}
+
+.sidebar {
+  z-index: 1000;
+}
+
+

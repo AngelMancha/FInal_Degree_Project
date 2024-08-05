@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambiado a una fuente acorde a interfaces modernas */
+    display: flex;
+}
+
+
+.mySidebar{
+
+    background: linear-gradient( #1a29af, #5400a3);
+  
+  
+  }
+
+  #img_prediccion {
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Definir la transición */
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+
+.rounded{
+    border-radius: 50px;
+}
+
+/*contenedor que se ajusta al texto*/
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.8em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    height: 50px;
+}
+
+.project {
+    transition: transform 0.3s ease; /* Cambia '0.3s' al tiempo de transición que prefieras */
+}
+
+.project:hover {
+    transform: scale(1.1); /* Cambia '1.1' al factor de escala que prefieras */
+}
+
+
+
+/* Estilos para los divs en la columna derecha */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    text-align: center;
+    position: relative;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+    font-size: 1.5em;
+}
+
+/* Efecto hover para los divs con glow */
+.item:hover {
+    border-color: #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+
+/* Efecto hover para los proyectos */
+.item:hover {
+    /*border: 2px solid #b13de7;  Borde blanco en el hover */
+    transform: scale(1.05); /* Efecto de escala al hacer hover */
+}
+
+/* Estilos adicionales para mejorar la presentación */
+
+.banner-gradient {
+    width: 100%;
+    height: calc(38vh - 56px); /* Resta la altura del topbar */
+    background: linear-gradient(to right,  #1a29af, #5400a3); /* Cambiar los colores a morado y azul */
+    position: absolute;
+    top: 56px; /* Ajusta el valor según la altura del topbar */
+    left: 0;
+    z-index: -1;
+}
+
+#content {
+    position: relative; /* Asegura que el contenido esté por encima del banner */
+    z-index: 1;
+}
+
+.chart-area canvas {
+    max-width: 100%; /* Asegura que el canvas del gráfico se ajuste al ancho del contenedor */
+    height: auto; /* Permite que la altura del canvas se ajuste automáticamente */
+  }
+  
+  .card-body {
+    padding: 20px; /* Ajusta el relleno del cuerpo de la tarjeta según sea necesario */
+  }
+  
+  .chart-area {
+    margin-bottom: -20px; /* Ajusta el margen inferior para evitar desbordamientos */
+  }
+  

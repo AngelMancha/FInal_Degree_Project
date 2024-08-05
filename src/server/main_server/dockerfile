@@ -1,0 +1,20 @@
+#Usar una imagen de GCC como base
+FROM gcc:latest
+
+# Establecer el directorio de trabajo dentro del contenedor
+WORKDIR /app
+
+# Copiar los archivos necesarios (servidor.c, implementacion.c, cJSON.c)
+COPY servidor.c .
+COPY implementacion.c .
+COPY cJSON.c .
+COPY comunicacion.h .
+COPY implementacion.h .
+COPY cJSON.h .
+
+
+# Compilar el servidor
+RUN gcc -o servidor servidor.c implementacion.c cJSON.c -lpthread -lrt -lcurl
+
+# Comando para ejecutar el servidor cuando se inicie el contenedor
+CMD ["./servidor"]
