@@ -1,0 +1,134 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: servidor-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: servidor
+  template:
+    metadata:
+      labels:
+        app: servidor
+    spec:
+      containers:
+      - name: servidor
+        image: angelmanchan/server
+        ports:
+        - containerPort: 8888
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cliente-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cliente
+  template:
+    metadata:
+      labels:
+        app: cliente
+    spec:
+      containers:
+      - name: cliente
+        image: angelmanchan/cliente:latest
+        ports:
+        - containerPort: 3000
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bbdd-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bbdd
+  template:
+    metadata:
+      labels:
+        app: bbdd
+    spec:
+      containers:
+      - name: bbdd
+        image: angelmanchan/mongo
+        ports:
+        - containerPort: 9000
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: modelo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: modelo
+  template:
+    metadata:
+      labels:
+        app: modelo
+    spec:
+      containers:
+      - name: modelo
+        image: angelmanchan/modelo
+        ports:
+        - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bbdd-service
+spec:
+  selector:
+    app: bbdd
+  ports:
+    - protocol: TCP
+      port: 9000
+      targetPort: 9000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: servidor-service
+spec:
+  selector:
+    app: servidor
+  ports:
+    - protocol: TCP
+      port: 8888
+      targetPort: 8888
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cliente-service
+spec:
+  selector:
+    app: cliente
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: LoadBalancer
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: modelo-service
+spec:
+  selector:
+    app: modelo
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000

@@ -1,0 +1,436 @@
+/* Añade estos estilos a tu archivo style.css */
+
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+}
+
+.dark-mode {
+    background: linear-gradient(to top right, #0c051a, #26254c);
+    color: #fff;
+}
+
+.columna-izquierda {
+    width: 20%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #26254c, #555888);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    z-index: 111;
+    position:fixed;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.perfil h2 {
+    margin: 0;
+}
+
+.panel-navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.panel-navegacion li {
+    margin-bottom: 10px;
+    
+}
+
+.panel-navegacion a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50px;
+    font-size: 30px;
+} */
+
+
+
+/* .columna-derecha {
+    width: 80%;
+    margin-left:20%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0c051a, #26254c);
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    
+} */
+
+/* .columna-derecha h1{
+    margin-top: 0;
+
+    font-size: 3em;
+} */
+
+/* .statistics-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.item {
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+    font-size: 85%;
+    
+} */
+
+/* .item:hover {
+    border-color: #fff;
+    transition: background 0.5s ease, transform 0.5s ease;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.item h2{
+    margin: 0;
+    font-size: 2.4em;
+}
+.item p{
+    margin: 0;
+    font-size: 1.8em;
+} */
+
+/* #proyect_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #e89cc3, #6ea8ff);
+    
+}
+
+#proyect_tareas{
+
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #766bea, #e89cc3);
+}
+#proyect_deadproject_fase
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #ffbf41, #766bea);
+} */
+
+
+
+/* #circle_porcentaje {
+    margin: 0;
+    font-size: 2em;
+} */
+.img_header{
+  z-index: 11111;
+}
+.task_font{
+    margin-top: 5px;
+    font-size: 1.4em;
+
+}
+
+.rounded-table {
+  border-radius: 10px; /* Ajusta el valor según desees */
+}
+.mySidebar{
+
+  background: linear-gradient( #1a29af, #5400a3);
+
+
+}
+#members-container {
+  
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    box-sizing: border-box;
+   
+}
+
+
+
+#files-container {
+    flex: 70;
+    background-color: #26254c;
+    border-radius: 15px;
+}
+
+.members_lists{
+    display: flex;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+.tasks_lists{
+  display: flex;
+  margin-left: 20px;
+  border-radius: 15px;
+}
+
+
+
+#members-container h1{
+    margin-top: 0;
+    margin-left: 20px;
+    font-size: 2em;
+}
+
+.member_name{
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+
+
+
+.members_lists:hover{
+    border-color: #fff;
+    transition: background 0.5s ease, transform 0.5s ease;
+    transform: scale(1.1);
+    
+
+} 
+
+#add_task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+#add_task:hover{
+    border-color: #fff;
+    transition: background 0.5s ease, transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+
+#add_member{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-left: 20px;
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+#add_member:hover{
+  border-color: #fff;
+  transition: background 0.5s ease, transform 0.5s ease;
+  transform: scale(1.1);
+}
+
+.avatar_hover:hover{
+    border-color: #fff;
+    transition: background 0.5s ease, transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.text-completed {
+    color: #00ac69; /* Ajusta este color según tus preferencias */
+}
+
+.banner-gradient {
+    width: 100%;
+    height: calc(38vh - 56px); /* Resta la altura del topbar */
+    background: linear-gradient(to right,  #1a29af, #5400a3); /* Cambiar los colores a morado y azul */
+    position: absolute;
+    top: 56px; /* Ajusta el valor según la altura del topbar */
+    left: 0;
+    z-index: 0;
+  }
+  
+  .navbar {
+    z-index: 1000;
+  }
+  
+  .sidebar {
+    z-index: 1000;
+  }
+
+
+  .timeline {
+    display: flex;
+    align-items: center;
+  }
+  
+  .phase {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .connector {
+    height: 4px;
+    width: 50px;
+    background-color: #ccc;
+    position: relative;
+  }
+  
+  .connector:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .preparando .connector {
+    margin-left: calc(100% + 20px);
+  }
+  
+  .desarrollando .connector {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .testeando .connector {
+    margin-right: calc(100% + 20px);
+  }
+  
+  .title {
+    font-weight: bold;
+
+  }
+  
+  .preparando {
+    background-color: #0061f252; /* Rojo claro */
+  }
+  
+  .desarrollando {
+    background-color: #f4a30059; /* Amarillo dorado */
+  }
+  
+  .testeando {
+    background-color: #00ac6a7a; /* Azul claro */
+  }
+  
+  .finalizado {
+    background-color: #e813006b; /* Verde claro */
+  }
+  
+
+#header_project{
+  z-index: 111;
+  }
+
+.item h2{
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#sendMessageButton{
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  z-index: 1111111111111;;
+}
+
+.modal2 {
+  display: none; /* Por defecto, oculta la ventana modal */
+  position: fixed;
+  z-index: 111111;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 20%;
+  border-radius: 15px;
+}
+
+#taskName{
+  border-radius: 15px;
+}
+#dueDate{
+  border-radius: 15px;
+}
+#members{
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+#newTaskForm button[type="submit"] {
+  display: block; /* Hacer que el botón ocupe todo el ancho disponible */
+  margin: 0 auto; /* Centrar horizontalmente el botón */
+  border-radius: 10px; /* Redondear las esquinas del botón */
+}
+
+#newMemberForm button[type="submit"] {
+  display: block; /* Hacer que el botón ocupe todo el ancho disponible */
+  margin: 0 auto; /* Centrar horizontalmente el botón */
+  border-radius: 10px; /* Redondear las esquinas del botón */
+}
+/* Estilos para el botón de cerrar */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.back-button{
+  margin: 0 auto; /* Centrar horizontalmente el botón */
+  border-radius: 10px; /* Redondear las esquinas del botón */
+}

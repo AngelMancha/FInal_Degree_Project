@@ -1,0 +1,218 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos del formulario */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    form {
+        width: 80%;
+    }
+}
+
+/* Estilos generales para los formularios */
+.form {
+
+
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+#registrationForm {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6C63FF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6C63FF;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to left,  #1a29af, #5400a3);
+    overflow: hidden; /* Oculta el contenido que se desborde del contenedor */
+    position: relative; /* Establece la posición relativa para poder posicionar el contenido dentro de él */
+}
+
+.decorative-image {
+    z-index: 1; /* La coloca detrás del contenido */
+    border-radius: 20px; /* Agrega bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+    background: white;
+    
+}
+
+.decorative-image img {
+    width: 80vw; /* Establece un ancho máximo relativo */
+    max-width: 800px; /* Establece un ancho máximo absoluto */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+.card {
+    border: none;
+    border-radius: 20px;
+    border-radius: 20px; /* Agrega bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+    overflow: hidden;
+    background: white;
+    width: 50%;
+    max-width: 500px;
+    position: relative; /* Establece la posición relativa para poder posicionar el contenido dentro de él */
+    z-index: 1; /* Lo coloca sobre la imagen de fondo */
+}
+
+.card .card-body {
+    padding: 40px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.brand-logo {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.brand-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #6C63FF;
+    box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.25);
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6C63FF;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #524ae4;
+}
+
+.register-link {
+    display: block;
+    text-align: center;
+    color: #6C63FF;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
