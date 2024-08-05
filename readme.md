@@ -71,7 +71,7 @@ In this guide, the application will run with a _yaml_ file, except instead of ru
 
 
 1. Clone the repository to your local machine by accessing the following link:
-   https://github.com/AngelMancha/summer_proyect_TFG.git
+   https://github.com/AngelMancha/FInal_Degree_Project.git
 
 3. Execute the following lines of code in a Linux distribution to install Docker and Minikube:
 
