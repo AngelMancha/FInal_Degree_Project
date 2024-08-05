@@ -14,44 +14,12 @@ This is a software project management solution that provides users with a powerf
 
 ## Table of Contents
 
-- [Installation](#installation)
 - [Tools](#Tools)
 - [Usage](#usage)
+- [Installation](#installation)
 - [License](#license)
 
-## Installation
 
-Although the application is also deployed in the cloud and accessible through the internet, instructions are also provided so that users are able to launch it from a local environment.
-
-In this guide, the application will run with a _yaml_ file, except instead of running it on a production Kubernetes cluster with the AKS provided by Microsoft Azure, it will run on a local Kubernetes cluster like **Minikube**
-
-
-1. Clone the repository to your local machine by accessing the following link:
-   https://github.com/AngelMancha/summer_proyect_TFG.git
-
-3. Execute the following lines of code in a Linux distribution to install Docker and Minikube:
-
-```bash
-sudo apt update && sudo apt install docker.io
-sudo apt update && sudo apt upgrade
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-sudo install minikube /usr/local/bin
-sudo apt install kubectl
-```
-3. Once installed, start the Minikube local cluster and verify the installation:
-```bash
-minikube start
-minikube status
-kubectl get nodes
-```
-4. Load the azure.yaml file:
-```bash
-kubectl apply -f azure.yaml
-```
-5. Finally, access the service that CoTaskPILOT will launch in the browser:
-```bash
-minikube service cliente-service
-```
 
 ## Tools
 ![architecture](images/Arquitectura_TFG.png)
@@ -95,7 +63,39 @@ Pressing on any of the contributing members of the same project opens a direct m
 Finally, a navigation map of all the interfaces is provided:
 
 ![navigation_map](images/figma.png)
+## Installation
 
+Although the application is also deployed in the cloud and accessible through the internet, instructions are also provided so that users are able to launch it from a local environment.
+
+In this guide, the application will run with a _yaml_ file, except instead of running it on a production Kubernetes cluster with the AKS provided by Microsoft Azure, it will run on a local Kubernetes cluster like **Minikube**
+
+
+1. Clone the repository to your local machine by accessing the following link:
+   https://github.com/AngelMancha/summer_proyect_TFG.git
+
+3. Execute the following lines of code in a Linux distribution to install Docker and Minikube:
+
+```bash
+sudo apt update && sudo apt install docker.io
+sudo apt update && sudo apt upgrade
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube /usr/local/bin
+sudo apt install kubectl
+```
+3. Once installed, start the Minikube local cluster and verify the installation:
+```bash
+minikube start
+minikube status
+kubectl get nodes
+```
+4. Load the azure.yaml file:
+```bash
+kubectl apply -f azure.yaml
+```
+5. Finally, access the service that CoTaskPILOT will launch in the browser:
+```bash
+minikube service cliente-service
+```
 ## License
 
 This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives License
