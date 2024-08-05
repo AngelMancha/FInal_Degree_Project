@@ -15,6 +15,7 @@ This is a software project management solution that provides users with a powerf
 ## Table of Contents
 
 - [Installation](#installation)
+- [Tools](#Tools)
 - [Usage](#usage)
 - [License](#license)
 
@@ -51,6 +52,17 @@ kubectl apply -f azure.yaml
 ```bash
 minikube service cliente-service
 ```
+
+## Tools
+![architecture](images/Arquitectura_TFG.png)
+
+The diagram depicts a distributed architecture based on microservices, where a server developed in C manages these microservices. The microservices are designed to handle two key aspects: the database, using MongoDB as the database management system, and the artificial intelligence model used by the application.
+
+The C server is responsible for managing and accessing these microservices via the HTTP protocol. This approach limits direct client access to the microservices and reduces the exposure of the database to potential vulnerabilities and external attacks. Additionally, by adopting a microservices-based approach dedicated to specific functionalities, modularity and scalability are facilitated. A later section of this document discusses the advantages of using microservices in detail.
+
+There is also a NodeJs server that acts as an intermediary between the front-end, developed with JavaScript, HTML, and CSS along with the Bootstrap framework, and the aforementioned C server. This NodeJs server manages simultaneous client connections to the application and establishes a connection with the C server to process and distribute information to the corresponding connected client. To communicate with the JavaScript front-end, this NodeJs server uses WebSockets, while TCP sockets are used for low-level communications with the C server. Additionally, it includes an HTTP server configured through Express to allow clients to connect from the internet.
+
+The Docker tool is then used to containerize the application. Specifically, Docker is used to separately containerize the microservices, the C server, and the JavaScript front-end. Finally, to deploy the application in a real production environment, the Docker containers are orchestrated in a Kubernetes cluster deployed on Azure, Microsoft's cloud service provider, using AKS (Azure Kubernetes Service).
 ## Usage
 
 Instructions on how to use CoTaskPILOT:
