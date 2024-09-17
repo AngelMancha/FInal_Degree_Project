@@ -24,7 +24,7 @@ This is a software project management solution that provides users with a powerf
 ## Tools
 ![architecture](images/Arquitectura_TFG.png)
 
-The diagram depicts a distributed architecture based on microservices, where a server developed in C manages these microservices. The microservices are designed to handle two key aspects: the database, using MongoDB as the database management system, and the artificial intelligence model used by the application.
+The diagram depicts a distributed architecture based on microservices, where a server developed in C is the one in charge of managing them. The microservices are designed to handle two key aspects: the database, using MongoDB as the database management system, and the artificial intelligence model used by the application.
 
 The C server is responsible for managing and accessing these microservices via the HTTP protocol. This approach limits direct client access to the microservices and reduces the exposure of the database to potential vulnerabilities and external attacks. Additionally, by adopting a microservices-based approach dedicated to specific functionalities, modularity and scalability are facilitated. A later section of this document discusses the advantages of using microservices in detail.
 
